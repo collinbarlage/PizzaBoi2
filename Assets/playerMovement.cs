@@ -172,7 +172,7 @@ public class playerMovement : MonoBehaviour {
         if (shroom.name == "shroom1(Clone)") {
             Rigidbody shroomRb = shroom.GetComponent<Rigidbody>();
             
-            float tractorBeamStrength = -3;
+            float tractorBeamStrength = -5;
             float xComponent = shroomRb.position.x - rb.position.x;
             float zComponent = shroomRb.position.z - rb.position.z;
             float tractorBeam = tractorBeamStrength * (1 / Mathf.Sqrt(Mathf.Pow(xComponent,2) + Mathf.Pow(zComponent, 2)));
