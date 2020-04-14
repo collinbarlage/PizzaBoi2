@@ -90,7 +90,7 @@ public class playerMovement : MonoBehaviour {
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
         transform.rotation = Quaternion.Euler(new Vector3(-90f, 0f, -1 * angle * Mathf.Rad2Deg - 90f));
 
-        // Check button state
+        // Check button states
         if (Input.GetKeyDown("w")) toggleBoost(true);
         if (Input.GetKeyUp  ("w")) toggleBoost(false);
 
